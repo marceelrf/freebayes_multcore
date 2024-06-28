@@ -1,5 +1,6 @@
 import subprocess
 from multiprocessing import Pool, cpu_count
+import time
 
 def run_freebayes(command):
     """Runs a freebayes command."""
@@ -25,7 +26,16 @@ if __name__ == '__main__':
 
     # Prepare the commands
     commands = prepare_commands(BED_FILE, REF, BAM_LIST)
-
+    
+    # Start timing
+    start_time = time.time()
+    
+    
     # Use a pool of workers to run the commands in parallel
     with Pool(NUM_CORES) as pool:
         pool.map(run_freebayes, commands)
+        
+    # End timing
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print(f"Total time taken: {elapsed_time:.2f} seconds")
