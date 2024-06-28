@@ -87,9 +87,11 @@ if __name__ == '__main__':
     print(f"Total time taken: {elapsed_time:.2f} seconds")```
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contributing
+
 1. Fork the repository
 2 . Create your feature branch (git checkout -b feature/fooBar)
 3. Commit your changes (git commit -am 'Add some fooBar')
@@ -97,8 +99,11 @@ This project is licensed under the MIT License. See the LICENSE file for details
 5. Create a new Pull Request
 
 ## Acknowledgements
+
 - FreeBayes
 - Python
 - multiprocessing module
+
 ## Contact
+
 For any questions or suggestions, please open an issue or contact me at [marcel.ferreira@unesp.br].
