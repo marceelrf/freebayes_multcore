@@ -85,7 +85,7 @@ if __name__ == '__main__':
     end_time = time.time()
     elapsed_time = end_time - start_time
     print(f"Total time taken: {elapsed_time:.2f} seconds")
-    ```
+```
 
 ## License
 
@@ -94,7 +94,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contributing
 
 1. Fork the repository
-2 . Create your feature branch (git checkout -b feature/fooBar)
+2. Create your feature branch (git checkout -b feature/fooBar)
 3. Commit your changes (git commit -am 'Add some fooBar')
 4. Push to the branch (git push origin feature/fooBar)
 5. Create a new Pull Request
