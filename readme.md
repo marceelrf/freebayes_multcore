@@ -1,4 +1,4 @@
-# FreeBayes Parallel Runner
+# Freebayes Multicores Runner
 
 This script allows you to run FreeBayes in parallel, using multiple cores to process each line of a BED file. Each region specified in the BED file is processed in a separate core, and you can specify the number of cores to use as well as the base name for the output files.
 
@@ -38,7 +38,7 @@ This script allows you to run FreeBayes in parallel, using multiple cores to pro
 
 3. Run the script:
     ```bash
-    python freebayes_parallel_runner.py
+    python freebayes_multicores.py
     ```
 
 ## Example
