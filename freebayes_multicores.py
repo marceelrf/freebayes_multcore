@@ -10,7 +10,9 @@ def prepare_commands(bed_file, ref, bam_list):
     commands = []
     with open(bed_file, 'r') as f:
         for idx, line in enumerate(f):
-            region = line.strip()
+            columns = line.strip().split()
+            chr, start, end = columns[0], columns[1], columns[2]
+            region = f"{chr}:{start}-{end}"
             command = f"freebayes -f {ref} -L {bam_list} -r {region} > out{idx + 1}.vcf"
             commands.append(command)
     return commands
