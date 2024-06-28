@@ -84,7 +84,8 @@ if __name__ == '__main__':
     # End timing
     end_time = time.time()
     elapsed_time = end_time - start_time
-    print(f"Total time taken: {elapsed_time:.2f} seconds")```
+    print(f"Total time taken: {elapsed_time:.2f} seconds")
+    ```
 
 ## License
 
