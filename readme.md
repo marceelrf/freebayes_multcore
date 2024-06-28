@@ -14,8 +14,8 @@ This script allows you to run FreeBayes in parallel, using multiple cores to pro
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/freebayes-parallel-runner.git
-    cd freebayes-parallel-runner
+    git clone https://github.com/marceelrf/freebayes_multcore.git
+    cd freebayes_multcore
     ```
 
 2. Ensure FreeBayes is installed and available in your PATH:
