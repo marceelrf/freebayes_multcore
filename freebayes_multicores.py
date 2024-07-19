@@ -6,7 +6,7 @@ def run_freebayes(command):
     """Runs a freebayes command."""
     subprocess.run(command, shell=True)
 
-def prepare_commands(bed_file, ref, bam_list):
+def prepare_commands(bed_file, ref, bam_list, output_base_name):
     """Reads the BED file and prepares freebayes commands."""
     commands = []
     with open(bed_file, 'r') as f:
@@ -26,11 +26,10 @@ if __name__ == '__main__':
     NUM_CORES = 4  # Adjust this to the number of cores you want to use
 
     # Prepare the commands
-    commands = prepare_commands(BED_FILE, REF, BAM_LIST)
+    commands = prepare_commands(BED_FILE, REF, BAM_LIST, OUTPUT_BASE_NAME)
     
     # Start timing
     start_time = time.time()
-    
     
     # Use a pool of workers to run the commands in parallel
     with Pool(NUM_CORES) as pool:
